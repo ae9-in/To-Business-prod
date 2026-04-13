@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
-import InteractiveCursor from '@/components/InteractiveCursor';
 import "./globals.css";
 
 const inter = Inter({
@@ -61,7 +60,6 @@ export default function RootLayout({
       className={`${inter.variable} ${jakarta.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-white text-[#0f172a] selection:bg-blue-100 selection:text-blue-900">
-        <InteractiveCursor />
         {children}
       </body>
     </html>
