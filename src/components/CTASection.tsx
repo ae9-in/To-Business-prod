@@ -1,7 +1,4 @@
-'use client';
-
 import { ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSd7NqnnRSaFTtXKcCoB-VyKpRm4R-rCL6-NxZHjCvX0VycTWg/viewform';
 
@@ -9,13 +6,7 @@ export default function CTASection() {
   return (
     <section className="bg-[#f8f9ff] py-24 relative overflow-hidden">
       <div className="mx-4 md:mx-12">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="relative bg-gradient-to-br from-[#1e1b4b] via-[#2e1a47] to-[#1e1b4b] rounded-[40px] border border-indigo-700/30 overflow-hidden shadow-2xl"
-        >
+        <div className="relative bg-gradient-to-br from-[#1e1b4b] via-[#2e1a47] to-[#1e1b4b] rounded-[40px] border border-indigo-700/30 overflow-hidden shadow-2xl">
           {/* Centered Radial Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none" />
 
@@ -42,7 +33,7 @@ export default function CTASection() {
               <span>Free to join · No placement fee · 5,000+ students placed</span>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
