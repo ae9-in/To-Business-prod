@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import HeroIridescence from './HeroIridescence';
 
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSd7NqnnRSaFTtXKcCoB-VyKpRm4R-rCL6-NxZHjCvX0VycTWg/viewform';
 
@@ -6,6 +7,7 @@ export default function HeroSection() {
   return (
     <section className="bg-[#f8f9ff] py-32 border-b border-[#eef0f6] relative overflow-hidden" style={{ minHeight: '80vh' }}>
       <div className="absolute inset-0 z-0 pointer-events-none bg-[radial-gradient(circle_at_top_left,rgba(173,189,255,0.38),transparent_34%),radial-gradient(circle_at_75%_18%,rgba(146,232,255,0.18),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.8),rgba(248,249,255,0.96))]" />
+      <HeroIridescence />
 
       <div className="max-w-[1280px] mx-auto px-6 grid lg:grid-cols-[1fr_1fr] gap-16 md:gap-24 items-center relative z-10">
         
